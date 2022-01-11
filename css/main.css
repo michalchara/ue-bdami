@@ -1,0 +1,41 @@
+body {
+    background-color:lightgray;
+    padding-top: 4rem;
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#header {
+    color:darkslategray;
+    position:relative;
+    text-align: center;
+}
+
+    #header > .headertext{
+        color:darkslategray;
+        font-size: 3rem;
+        font-weight: bold;    
+    }
+
+
+#main {
+    margin:auto;
+}
+
+	#main .inner {
+        background-color: lightgray;
+        margin: 0 auto;
+        width: 80%;
+		margin-bottom: 2rem;
+		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	}
+
+    #main .inner img {
+        width: 100%;
+		position: relative;
+	}
