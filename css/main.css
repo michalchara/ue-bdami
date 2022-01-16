@@ -6,36 +6,111 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 #header {
+    margin:auto;
     color:darkslategray;
     position:relative;
-    text-align: center;
 }
 
-    #header > .headertext{
-        color:darkslategray;
-        font-size: 3rem;
-        font-weight: bold;    
-    }
-
-
-#main {
-    margin:auto;
-}
-
-	#main .inner {
+    #header > .inner {
+        position:relative;
         background-color: lightgray;
-        margin: 0 auto;
-        width: 80%;
-		margin-bottom: 2rem;
+        margin: 10px auto 0 auto;
+        width: 60%;
+        min-height: 2rem;
 		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 	}
 
-    #main .inner img {
-        width: 100%;
-		position: relative;
+        #header > .inner > div.menuItemLeft{
+            float: left;
+            text-align: left;
+            margin-right: 10px;
+            padding: 0.5rem 0.5rem;
+        }
+
+        #header > .inner > div.menuItemRight{
+            float:right;
+            text-align: right;
+            margin-left: 10px;
+            padding: 0.5rem 0.5rem;
+        }
+
+
+
+
+
+#main {
+    margin: 20px auto;
+}
+
+	#main > .inner {
+        background-color: lightgray;
+        margin: 2rem auto;
+        width: 60%;
+		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 	}
+
+
+.inner .inner {
+    background-color: lightgray;
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.content{
+    display:inline-block;
+    background-color: lightgray;
+    margin: 10px 10px 10px 10px;
+}
+
+
+.inner img {
+    width: 100%;
+	position: relative;
+    display:block;
+}
+
+a {
+    text-decoration:none;
+    font-weight: bold;
+    color: darkslategray;;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(0, 98, 179);
+}
+
+
+
+#cart{
+    background-color: lightgray;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    position:absolute;
+    width: 15%;
+    right: 2%;
+    top:40%;
+}
+
+.contentCentered{
+    text-align: center;
+    background-color: lightgray;
+    margin: 10px 10px 10px 10px;
+}
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.stretched{
+    width: 100%;
+}
